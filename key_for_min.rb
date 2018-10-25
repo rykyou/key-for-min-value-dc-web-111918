@@ -18,10 +18,12 @@ def key_for_min_value(name_hash)
     end 
   end 
   
+  lowest_value_key = ""
   name_hash.each do |key, value|
     if value == lowest_value
-      key 
+      lowest_value_key = key 
     end 
   end 
+  lowest_value_key
 end
 
